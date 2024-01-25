@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Flask App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Weight Management App</title>
 </head>
 <body>
-    <h1>Welcome to My Flask App</h1>
-<form method="post" action="/submit">
-    <input type="text" name="username" placeholder="Enter your username">
-    <input type="text" name="email" placeholder="Enter your email">
-    <input type="submit" value="Submit">
-</form>
+    <header>
+        <h1 class="app-title">Your Weight Management Journey</h1>
+    </header>
+    <nav id="navbar" class="hidden">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/bmi">BMI Calculator</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
 
-<a href="/bmi">Go to BMI Calculator</a>
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Join Us on a Journey to Better Health and Happiness</h2>
+            <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
+        </div>
+        <div class="intro-image">
+            <!-- I add the image here -->
+        </div>
+    </section>
 
+    <section class="slideshow">
+        <!-- I add a slideshow gallery here -->
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Weight Management App</p>
+    </footer>
 </body>
 </html>
