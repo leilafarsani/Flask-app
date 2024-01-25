@@ -22,3 +22,14 @@ def submit():
     db.session.commit()
     return redirect(url_for('home'))
 
+@app.route('/bmi')
+def bmi():
+    return render_template('bmi.html')
+
+@app.route('/calculate_bmi', methods=['POST'])
+def calculate_bmi():
+    weight = float(request.form['weight'])
+    height = float(request.form['height']) / 100  # Convert cm to meters
+    bmi = round(weight / (height ** 2), 2)
+    
+    return render_template('bmi_result.html', bmi=bmi)
