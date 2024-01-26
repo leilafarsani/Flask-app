@@ -87,7 +87,9 @@ def hash_password(password):
 def check_password(candidate_password, hashed_password):
     return bcrypt.check_password_hash(hashed_password, candidate_password)
 
-
+@app.route('/test')
+def test():
+    return render_template('test.html')
 from flask import Flask, render_template
 
 
