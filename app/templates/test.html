@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}">
+    <title>Weight Management App</title>
+    <style>
+        .hero {
+            background: url("{{ url_for('static', filename='homePageImg.png') }}") no-repeat center center / cover;
+            color: rgb(46, 4, 4);
+            text-align: center;
+            padding: 100px 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Weight Journey</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#stories">Success Stories</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Transform Your Life Today</h2>
+            <p>Join the journey to better health.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+    
+
+    <section id="features" class="features">
+        <div class="container">
+            <!-- Feature cards here -->
+        </div>
+    </section>
+
+    <section id="stories" class="testimonials">
+        <div class="container">
+            <!-- Testimonials slider here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Weight Journey</p>
+            <!-- Footer contents here -->
+        </div>
+    </footer>
+</body>
+</html>
