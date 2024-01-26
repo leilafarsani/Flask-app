@@ -76,3 +76,38 @@ footer {
     padding: 20px 0;
     margin-top: 20px;
 }
+
+/* ... existing CSS content ... */
+
+.feature-card {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #0e9625;
+}
+
+.testimonial-slider blockquote {
+    font-style: italic;
+    color: #333;
+    padding: 20px;
+    border-left: 5px solid #0e9625;
+    margin: 20px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1, nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
